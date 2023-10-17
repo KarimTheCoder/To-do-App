@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/outline_background"
+    android:layout_marginStart="@dimen/big_margin"
+    android:layout_marginBottom="@dimen/small_margin"
+    android:layout_marginEnd="@dimen/big_margin"
+    >
+
+    <CheckBox
+        android:id="@+id/checkbox_completed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:checked="false" />
+
+    <EditText
+        android:id="@+id/edittext_task_description"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/list_text_size"
+        android:textColor="@color/primary_text_color"
+        android:maxLines="1"
+        android:text="Task description goes here"
+        style="@style/EditTextNoUnderline"
+
+        />
+
+    <ImageButton
+        android:id="@+id/button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/baseline_delete_24"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Delete"
+        android:layout_marginEnd="@dimen/big_margin"
+        app:tint="@color/icon_color" />
+
+</LinearLayout>
